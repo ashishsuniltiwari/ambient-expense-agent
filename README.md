@@ -23,3 +23,27 @@ Ensure you have the `uv` package manager installed on your workstation.
 1. **Navigate to the Project:**
    ```powershell
    cd "C:\Users\Ashish Tiwari\Desktop\agy2-projects\ambient-expense-agent\expense-agent-v2"
+2. **Install Project Dependencies:**
+   ```powershell
+   uv sync
+3. **Run the Test Suite:**
+Execute the local unit tests to verify proper agent graph configuration:
+```powershell
+uv run pytest tests/unit/
+
+
+## 🛡️ Pre-Commit Security Gating
+
+This repository utilizes local pre-commit hooks integrated with `Semgrep` to prevent sensitive credentials or vulnerable code patterns from being checked into version control.
+
+To trigger a manual scan during staging:
+
+```powershell
+git add .
+git commit -m "feat: run local security gates"
+
+```
+
+```
+
+```
