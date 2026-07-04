@@ -1,0 +1,1 @@
+{"type": "service_account", "project_id": "mock-project", "client_email": "mock@mock.iam.gserviceaccount.com", "token_uri": "https://oauth2.googleapis.com/token"}
