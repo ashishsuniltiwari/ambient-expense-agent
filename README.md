@@ -30,11 +30,16 @@ Ensure you have the `uv` package manager installed on your workstation.
    Execute the local unit tests to verify proper agent graph configuration:
    ```powershell
    uv run pytest tests/unit/
-🛡️ Pre-Commit Security Gating
-This repository utilizes local pre-commit hooks integrated with Semgrep to prevent sensitive credentials or vulnerable code patterns from being checked into version control.
+
+## 🛡️ Pre-Commit Security Gating
+
+This repository utilizes local pre-commit hooks integrated with `Semgrep` to prevent sensitive credentials or vulnerable code patterns from being checked into version control.
 
 To trigger a manual scan during staging:
 
-PowerShell
+```powershell
 git add .
 git commit -m "feat: run local security gates"
+
+```
+
